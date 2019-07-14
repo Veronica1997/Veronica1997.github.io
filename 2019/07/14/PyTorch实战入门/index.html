@@ -108,16 +108,20 @@
 
 
 
-  <meta name="description" content="越努力，越幸运">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Veronica1997">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="最常用命名规范小结 常用的程序库 文件组织不要将所有的层和模型放在同一个文件中。最好的做法是将最终的网络分离到独立的文件（networks.py）中，并将层、损失函数以及各种操作保存在各自的文件中（layers.py，losses.py，ops.py）。最终得到的模型（由一个或多个网络组成）应该用该模型的名称命名（例如，yolov3.py，DCGAN.py），且引用各个模块。主程序、单独的训练和测">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyTorch实战入门">
+<meta property="og:url" content="http://yoursite.com/2019/07/14/PyTorch实战入门/index.html">
 <meta property="og:site_name" content="Veronica1997">
-<meta property="og:description" content="越努力，越幸运">
+<meta property="og:description" content="最常用命名规范小结 常用的程序库 文件组织不要将所有的层和模型放在同一个文件中。最好的做法是将最终的网络分离到独立的文件（networks.py）中，并将层、损失函数以及各种操作保存在各自的文件中（layers.py，losses.py，ops.py）。最终得到的模型（由一个或多个网络组成）应该用该模型的名称命名（例如，yolov3.py，DCGAN.py），且引用各个模块。主程序、单独的训练和测">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190711191310391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc2NDU2OQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190711191422220.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc2NDU2OQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-07-14T09:03:58.847Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Veronica1997">
-<meta name="twitter:description" content="越努力，越幸运">
+<meta name="twitter:title" content="PyTorch实战入门">
+<meta name="twitter:description" content="最常用命名规范小结 常用的程序库 文件组织不要将所有的层和模型放在同一个文件中。最好的做法是将最终的网络分离到独立的文件（networks.py）中，并将层、损失函数以及各种操作保存在各自的文件中（layers.py，losses.py，ops.py）。最终得到的模型（由一个或多个网络组成）应该用该模型的名称命名（例如，yolov3.py，DCGAN.py），且引用各个模块。主程序、单独的训练和测">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190711191310391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc2NDU2OQ==,size_16,color_FFFFFF,t_70">
 
 
 
@@ -126,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/07/14/PyTorch实战入门/"/>
 
 
 
@@ -136,7 +140,7 @@
   };
 </script>
 
-  <title>Veronica1997</title>
+  <title>PyTorch实战入门 | Veronica1997</title>
   
 
 
@@ -183,8 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -225,7 +228,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
   </li>
@@ -293,9 +296,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -327,11 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/14/PyTorch实战入门/" itemprop="url">
-                  PyTorch实战入门
-                </a>
+          <h1 class="post-title" itemprop="name headline">PyTorch实战入门
               
             
           </h1>
@@ -406,9 +405,7 @@
       
 
       
-        
-          
-            <h4 id="最常用命名规范小结"><a href="#最常用命名规范小结" class="headerlink" title="最常用命名规范小结"></a>最常用命名规范小结</h4><p><img src="https://img-blog.csdnimg.cn/20190711191310391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc2NDU2OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+        <h4 id="最常用命名规范小结"><a href="#最常用命名规范小结" class="headerlink" title="最常用命名规范小结"></a>最常用命名规范小结</h4><p><img src="https://img-blog.csdnimg.cn/20190711191310391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc2NDU2OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h4 id="常用的程序库"><a href="#常用的程序库" class="headerlink" title="常用的程序库"></a>常用的程序库</h4><p><img src="https://img-blog.csdnimg.cn/20190711191422220.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc2NDU2OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h4 id="文件组织"><a href="#文件组织" class="headerlink" title="文件组织"></a>文件组织</h4><p>不要将所有的层和模型放在同一个文件中。最好的做法是将最终的网络分离到独立的文件（networks.py）中，并将层、损失函数以及各种操作保存在各自的文件中（layers.py，losses.py，ops.py）。最终得到的模型（由一个或多个网络组成）应该用该模型的名称命名（例如，yolov3.py，DCGAN.py），且引用各个模块。<strong>主程序、单独的训练和测试脚本应该只需要导入带有模型名字的 Python 文件。</strong> </p>
 <h4 id="PyTorch-开发风格与技巧"><a href="#PyTorch-开发风格与技巧" class="headerlink" title="PyTorch 开发风格与技巧"></a>PyTorch 开发风格与技巧</h4><p>最好将网络分解为更小的可复用的片段。一个 nn.Module 网络包含各种操作或其它构建模块。损失函数也是包含在 nn.Module 内，因此它们可以被直接整合到网络中。<br>继承 nn.Module 的类必须拥有一个「forward」方法，它实现了各个层或操作的前向传导。<br>一个 nn.module 可以通过「self.net(input)」处理输入数据。在这里直接使用了对象的「call()」方法将输入数据传递给模块。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">output = self.net(input)</span><br></pre></td></tr></table></figure></p>
@@ -445,8 +442,6 @@
 </ol>
 <h4 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h4><p>[1][<a href="https://mp.weixin.qq.com/s/6OxnjoaR2SQINKk9U_OrtQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/6OxnjoaR2SQINKk9U_OrtQ</a> ]<br>[2][<a href="https://blog.csdn.net/u012609509/article/details/81203436" target="_blank" rel="noopener">https://blog.csdn.net/u012609509/article/details/81203436</a> ]<br>[3][<a href="https://blog.csdn.net/u012609509/article/details/81203308" target="_blank" rel="noopener">https://blog.csdn.net/u012609509/article/details/81203308</a> ]<br>[4][<a href="https://blog.csdn.net/u012609509/article/details/81203376" target="_blank" rel="noopener">https://blog.csdn.net/u012609509/article/details/81203376</a> ]<br>[5][<a href="https://blog.csdn.net/u012609509/article/details/81264687" target="_blank" rel="noopener">https://blog.csdn.net/u012609509/article/details/81264687</a> ]<br>[6][<a href="https://blog.csdn.net/GZHermit/article/details/78730856" target="_blank" rel="noopener">https://blog.csdn.net/GZHermit/article/details/78730856</a> ]</p>
 
-          
-        
       
     </div>
 
@@ -466,171 +461,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/11/越努力，越幸运/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Veronica_ry">
-      <meta itemprop="description" content="越努力，越幸运">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Veronica1997">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/11/越努力，越幸运/" itemprop="url">
-                  越努力，越幸运
-                </a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2019/07/11/越努力，越幸运/" rel="next" title="越努力，越幸运">
+                <i class="fa fa-chevron-left"></i> 越努力，越幸运
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-07-11 18:48:33 / Updated at: 18:48:11" itemprop="dateCreated datePublished" datetime="2019-07-11T18:48:33+08:00">2019-07-11</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/07/11/越努力，越幸运/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/07/11/越努力，越幸运/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>“凡是过往，皆为序章”</p>
-</blockquote>
-<p>刚结束本科四年的学习，迈向研究生的两个月暑假里，对未来有迷茫，有思考，有沮丧，但<strong>我是不会轻易被打倒的！</strong> 从现在开始，万事只能靠自己了，研究生阶段或许只能孤军奋战，但是我一定要坚持做出和本科一样的成绩，两年后找工作，简历一定要更加精彩！</p>
-<blockquote>
-<p>“一路向前，生如夏花”</p>
-</blockquote>
-<p>暑假两个月，老师没有安排，但是学习一定不能懈怠，我想养成一个学习的好习惯，每天坚持写作，可以是学习的内容，可以是我的心得体会，先知先觉，不要因为本硕连读就降低自己的期望值，不要害怕怀疑自己，<strong>加倍努力才能看起来毫不费力</strong>。我们总是会被周围环境影响，在一个散漫的氛围里，很容易堕落，要做就做实验室的一股清流，那就要出淤泥而不染，每时每刻都做好<strong>自我监督</strong>。当你投入其中一段时间，就会发现学术的乐趣，此时再没必要“自我监督”，而是真的用热情去做，这种“活在自己世界”的状态，是最容易出成果的。<br>在知乎上[ <a href="https://www.zhihu.com/question/64566768" target="_blank" rel="noopener">https://www.zhihu.com/question/64566768</a> ] 看到<strong>博士生在没有导师指导的情况下，该如何自己选题发 CVPR ？</strong> 话题，里面有很多方法可以学习，迷茫的时候可以看看。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -640,170 +492,29 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/28/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Veronica_ry">
-      <meta itemprop="description" content="越努力，越幸运">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Veronica1997">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/28/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-06-28 11:13:14" itemprop="dateCreated datePublished" datetime="2018-06-28T11:13:14+08:00">2018-06-28</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/06/28/hello-world/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/06/28/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -824,8 +535,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -900,6 +620,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#最常用命名规范小结"><span class="nav-number">1.</span> <span class="nav-text">最常用命名规范小结</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用的程序库"><span class="nav-number">2.</span> <span class="nav-text">常用的程序库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件组织"><span class="nav-number">3.</span> <span class="nav-text">文件组织</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PyTorch-开发风格与技巧"><span class="nav-number">4.</span> <span class="nav-text">PyTorch 开发风格与技巧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Tensor的认识"><span class="nav-number">5.</span> <span class="nav-text">Tensor的认识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Variable的了解"><span class="nav-number">6.</span> <span class="nav-text">Variable的了解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nn-Module模块详解"><span class="nav-number">7.</span> <span class="nav-text">nn.Module模块详解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PyTorch环境下的一个简单网络"><span class="nav-number">8.</span> <span class="nav-text">PyTorch环境下的一个简单网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PyTorch-环境下的简单残差网络"><span class="nav-number">9.</span> <span class="nav-text">PyTorch 环境下的简单残差网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Pytorch中数据加载—Dataset类和DataLoader类"><span class="nav-number">10.</span> <span class="nav-text">Pytorch中数据加载—Dataset类和DataLoader类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PyTorch-环境下的带多个输出的网络"><span class="nav-number">11.</span> <span class="nav-text">PyTorch 环境下的带多个输出的网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义损失函数"><span class="nav-number">12.</span> <span class="nav-text">自定义损失函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Dataset类和DataLoader类"><span class="nav-number">13.</span> <span class="nav-text">Dataset类和DataLoader类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#训练模型的最佳代码结构"><span class="nav-number">14.</span> <span class="nav-text">训练模型的最佳代码结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用PyTorch注意事项"><span class="nav-number">15.</span> <span class="nav-text">使用PyTorch注意事项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文献："><span class="nav-number">16.</span> <span class="nav-text">参考文献：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1034,6 +770,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
@@ -1048,6 +788,23 @@
     <script id="dsq-count-scr" src="https://Veronica1997.disqus.com/count.js" async></script>
   
 
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2019/07/14/PyTorch实战入门/';
+        this.page.identifier = '2019/07/14/PyTorch实战入门/';
+        this.page.title = 'PyTorch实战入门';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Veronica1997.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
   
 
 
